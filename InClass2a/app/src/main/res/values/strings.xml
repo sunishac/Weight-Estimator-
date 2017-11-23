@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">InClass2a</string>
+    <string name="target_weight_label">Target Weight</string>
+    <string name="bmi_label">BMI Ranges</string>
+    <string name="height_l">Height</string>
+    <string name="height_feet" />
+    <string name="height_in" />
+    <string name="calculate_wgt_label">Calculate weight</string>
+    <string name="feet">feet</string>
+    <string name="first18"><![CDATA[<18.5]]></string>
+    <string name="second">18.5 to 24.9</string>
+    <string name="third">25.0 to 29.9</string>
+    <string name="forth"><![CDATA[>29.9]]></string>
+    <string name="inches">inches</string>
+    <string name="result" />
+
+
+</resources>

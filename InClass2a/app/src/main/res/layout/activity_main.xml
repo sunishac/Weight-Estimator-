@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/height_in"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/textView5"
+        android:layout_toStartOf="@+id/textView5" />
+
+    <TextView
+        android:text="@string/inches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:accessibilityTraversalAfter="@id/inch"
+        android:gravity="bottom" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/height_feet"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_above="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2" />
+
+    <TextView
+        android:text="@string/height_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        />
+
+    <Button
+        android:text="@string/calculate_wgt_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_marginBottom="88dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:id="@+id/result" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:text="@string/first18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton"
+            android:layout_weight="1"
+            android:layout_above="@+id/radioButton4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RadioButton
+            android:text="@string/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2"
+            android:layout_above="@+id/radioButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="@string/third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton3"
+            android:layout_weight="1"
+            android:layout_above="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RadioButton
+            android:text="@string/forth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton4"
+            android:layout_weight="1"
+            android:layout_above="@+id/radioButton3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RadioGroup>
+
+    <TextView
+        android:text="@string/target_weight_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/bmi_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/rg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/feet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/editText2"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_toEndOf="@+id/editText"
+        android:gravity="bottom" />
+
+</RelativeLayout>
